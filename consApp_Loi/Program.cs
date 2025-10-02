@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Security.Cryptography.X509Certificates;
 
 namespace MyApp
 {
@@ -10,13 +11,32 @@ namespace MyApp
             string path = @"C:\Users\" + Environment.UserName + @"\AppData\Roaming\ATAS\Indicators\cache\tradeneon";
             string filter = @"*ES*";
 
+            int ii = 0;
+
+            //-----
             Console.WriteLine("begin ...");
             Console.WriteLine("");
 
             var mc = new MyClass();
-            string result = mc.GetLatestFileName(path, filter);
+            string latestFileName = mc.GetLatestFileName(path, filter);
 
-            Console.WriteLine("Filename: " + result);
+
+            //string[,] allValues = { {"","","","","" } };
+
+            string[] allLines = File.ReadAllLines(latestFileName);
+
+
+            //----- output
+
+            Console.WriteLine("Filename: " + latestFileName);
+            Console.WriteLine("");
+
+            foreach (string line in allLines)
+            //for (int i = 0; i < allLines.GetLength(0); i++)
+            {
+                  Console.WriteLine(line);
+            }
+
             Console.WriteLine("");
             Console.WriteLine("habe fertig.");
         }
