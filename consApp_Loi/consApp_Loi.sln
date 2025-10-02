@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "consApp_Loi", "consApp_Loi.csproj", "{A2BC228D-4828-4E15-82C4-99BA33F7683A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2BC228D-4828-4E15-82C4-99BA33F7683A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2BC228D-4828-4E15-82C4-99BA33F7683A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2BC228D-4828-4E15-82C4-99BA33F7683A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2BC228D-4828-4E15-82C4-99BA33F7683A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED2AE53A-DFC0-4ECB-B750-C0B63C6C3C66}
+	EndGlobalSection
+EndGlobal
